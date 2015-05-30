@@ -66,6 +66,31 @@ define('AUTOMATIC_UPDATER_DISABLED', true);
 define('DISABLE_WP_CRON', true);
 define('DISALLOW_FILE_EDIT', true);
 
+define( 'IMAGE_EDIT_OVERWRITE', true );
+
+define( 'AUTOSAVE_INTERVAL', 320 ); // Seconds
+define( 'WP_POST_REVISIONS', 3 );
+
+define( 'WP_MEMORY_LIMIT', '96M' );
+define( 'WP_MAX_MEMORY_LIMIT', '256M' );
+
+define( 'EMPTY_TRASH_DAYS', 30 ); // 30 days
+
+define( 'FORCE_SSL_LOGIN', getenv('FORCE_SSL_LOGIN'));
+define( 'FORCE_SSL_ADMIN', getenv('FORCE_SSL_ADMIN'));
+
+/**
+ * Multi-Site
+ */
+define( 'WP_ALLOW_MULTISITE', getenv('WP_ALLOW_MULTISITE'));
+// define( 'NOBLOGREDIRECT', getenv('NOBLOGREDIRECT'));
+// define('MULTISITE', true);
+// define('SUBDOMAIN_INSTALL', getenv('SUBDOMAIN_INSTALL'));
+// define('DOMAIN_CURRENT_SITE', getenv('DOMAIN_CURRENT_SITE'));
+// define('PATH_CURRENT_SITE', '/');
+// define('SITE_ID_CURRENT_SITE', 1);
+// define('BLOG_ID_CURRENT_SITE', 1);
+
 /**
  * Bootstrap WordPress
  */
